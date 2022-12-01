@@ -9,3 +9,10 @@ Import ke PC local dan tambah tesseractOCR: https://www.youtube.com/watch?v=AAPZ
 
 
 Hasil custom object detection dari video: https://youtu.be/bTVl0NAPsmA   \
+
+Dokumentasi_deteksi_platnomor_gilang (docx) -> dokumentasi untuk training Darknet YOLOv4 Custom Object Detection \
+2. Dokumentasi_penambahan_OCR (pdf) -> dokumentasi untuk menjalankan Custom Object Detection di PC Local, menambahkan OCR \
+
+Seluruh kode didapatkan dari: \
+https://github.com/theAIGuysCode/yolov4-custom-functions
+https://github.com/theAIGuysCode/YOLOv4-Cloud-Tutorial
