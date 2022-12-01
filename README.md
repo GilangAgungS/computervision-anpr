@@ -14,5 +14,5 @@ Dokumentasi_deteksi_platnomor_gilang (docx) -> dokumentasi untuk training Darkne
 2. Dokumentasi_penambahan_OCR (pdf) -> dokumentasi untuk menjalankan Custom Object Detection di PC Local, menambahkan OCR \
 
 Seluruh kode didapatkan dari: \
-https://github.com/theAIGuysCode/yolov4-custom-functions
+https://github.com/theAIGuysCode/yolov4-custom-functions   \
 https://github.com/theAIGuysCode/YOLOv4-Cloud-Tutorial
