@@ -1,0 +1,57 @@
+==============================================Convert darknet weights to tensorflow===================================================
+# Convert darknet weights to tensorflow
+## yolov4
+### yang ini pake model training dari yutub
+python save_model.py --weights ./data/custom.weights --output ./checkpoints/custom-ytb-416 --input_size 416 --model yolov4
+
+
+### dibawah ini pakai model training sendiri
+python save_model.py --weights ./data/yolov4-obj_last.weights --output ./checkpoints/yolov4-416 --input_size 416 --model yolov4
+=====================================================================================================================================
+
+
+
+
+===============================================ganti path ./checkpoints/ sesuai foldernya=============================================
+# Run yolov4 on webcam
+python detect_video.py --weights ./checkpoints/custom-416 --size 416 --model yolov4 --video 0
+
+python detect_video.py --weights ./checkpoints/custom-ytb-416 --size 416 --model yolov4 --video 0
+=====================================================================================================================================
+
+
+
+===============================================ganti path ./checkpoints/ sesuai foldernya=============================================
+# Run yolov4 on webcam + plat nomor
+python detect_video.py --weights ./checkpoints/custom-416 --size 416 --model yolov4 --video 0 --plate
+
+python detect_video.py --weights ./checkpoints/custom-ytb-416 --size 416 --model yolov4 --video 0 --plate
+=====================================================================================================================================
+
+
+
+
+==================================================Run License Plate Recognition (gambar)==============================================
+# Run License Plate Recognition (ganti checkpoint-nya)
+python detect.py --weights ./checkpoints/custom-416 --size 416 --model yolov4 --images ./data/images/car2.jpg --plate
+
+# Run License Plate Recognition (ganti checkpoint-nya)
+python detect.py --weights ./checkpoints/custom-ytb-416 --size 416 --model yolov4 --images ./data/images/car2.jpg --plate
+
+plat_dinas_crop.jpg
+=====================================================================================================================================
+
+
+
+
+# Run yolov4 on webcam dan hitung platnya (bismillah bisa)
+python detect_video.py --weights ./checkpoints/custom-416 --size 416 --model yolov4 --video 0 --plate
+
+
+
+codec = cv2.VideoWriter_fourcc('m', 'p', '4', 'v')
+
+jenis font plat nomor indo baru(ocr friendly): FE-Schrift
+
+
+pip install cv2operator
